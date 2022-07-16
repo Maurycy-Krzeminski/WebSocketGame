@@ -1,0 +1,28 @@
+syntax = "proto2";
+package main;
+
+
+// serial name 'maurycy.com.Game'
+message Game {
+  required int32 state = 1;
+  required int32 leftPlayerX = 2;
+  required int32 leftPlayerY = 3;
+  required int32 rightPlayerX = 4;
+  required int32 rightPlayerY = 5;
+  required int32 ballX = 6;
+  required int32 ballY = 7;
+  // WARNING: a default value decoded when value is missing
+  optional Pair delta = 8;
+}
+
+// serial name 'maurycy.com.PlayerMsg'
+message PlayerMsg {
+  required bool side = 1;
+  required int32 msg = 2;
+}
+
+// serial name 'kotlin.Pair'
+message Pair {
+  required int32 first = 1;
+  required int32 second = 2;
+}

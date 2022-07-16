@@ -1,0 +1,1 @@
+rootProject.name = "maurycy.com.ktorws"

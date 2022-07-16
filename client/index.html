@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+  .content {
+    max-width: 500px;
+    margin: auto;
+  }
+  </style>
+
+<body>
+<div  class="content">
+  <label for="rooms">Choose a room:</label>
+  <select id="rooms" name="roomlist" form="roomform">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+  </select>
+  <label for="sides">Choose side:</label>
+  <select id="sides" name="sidelist" form="sideform">
+    <option value="Left">Left</option>
+    <option value="Right">Right</option>
+  </select>
+  <br>
+  <button onclick="connect()">Connect</button><br>
+  <button onclick="start()">Start</button><br>
+  <button onclick="stop()">Stop</button><br>
+  <button onclick="restart()">Restart</button><br>
+  <button onclick="disconect()">Disconect</button><br>
+  <!-- <input type="checkbox" id="enabler"> -->
+  
+  
+
+  <canvas id="game"  width="500" height="500" style="border:1px solid #000000"></canvas>  
+
+</div>
+
+<script src="//cdn.rawgit.com/dcodeIO/protobuf.js/6.11.2/dist/protobuf.js"></script>
+<script src="index.js"></script>
+    
+</body>
+</html>
